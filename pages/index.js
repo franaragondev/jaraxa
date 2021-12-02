@@ -13,9 +13,9 @@ export default function Home() {
 
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
+      {/* <footer className="flex items-center justify-center w-full h-24 border-t">
 
-      </footer>
+      </footer> */}
     </div>
   )
 }
