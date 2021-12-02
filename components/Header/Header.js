@@ -20,7 +20,7 @@ const Header = (props) => {
                 <FontAwesomeIcon className='text-white ml-2 text-xs mt-2 mr-16 cursor-pointer' icon={faBell} />
                 <div className='group'>
                     <img src='/image-user.png' alt='image user' className='absolute cursor-pointer w-9 right-4 top-4 rounded-md' />
-                    {/* <div className=' invisible group-hover:visible '>HOLA AMIGOS DE YOUTUVE</div> */}
+                    <div className='invisible absolute right-4 top-16 bg-white group-hover:visible '>HOLA AMIGOS DE YOUTUVE</div>
                 </div>
             </div>
         </div>
