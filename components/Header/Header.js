@@ -1,9 +1,9 @@
 //Componente que renderizará el header de la web
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faBell, faSearch, faCaretDown } from '@fortawesome/free-solid-svg-icons'
 import fontawesome from '@fortawesome/fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faSearch, faBell } from '@fortawesome/fontawesome-free-solid';
+import { faCaretDown, faCaretUp, faSearch, faBell } from '@fortawesome/fontawesome-free-solid';
+import Profiles from '../Profiles/Profiles';
+import Users_Options from '../Users_Options/Users_Options'
 
 const Header = (props) => {
     return (
@@ -20,7 +20,20 @@ const Header = (props) => {
                 <FontAwesomeIcon className='text-white ml-2 text-xs mt-2 mr-16 cursor-pointer' icon={faBell} />
                 <div className='group'>
                     <img src='/image-user.png' alt='image user' className='absolute cursor-pointer w-9 right-4 top-4 rounded-md' />
-                    <div className='invisible absolute right-4 top-16 bg-white group-hover:visible '>HOLA AMIGOS DE YOUTUVE</div>
+                    <div className='invisible absolute right-4 top-12 group-hover:visible'>
+                        <FontAwesomeIcon className='text-gray-400 text-lg absolute right-0' icon={faCaretUp} />
+                        <div className='bg-bg-transparent text-white w-52 mt-4 p-1'>
+                            <Profiles name='Fran Aragón' image='/image-user-1.png' />
+                            <Profiles name='Marina Barriga' image='/image-user-2.png' />
+                            <Profiles name='Alba Barriga' image='/image-user-3.png' />
+                            <Profiles name='Antonio Garrido' image='/image-user-4.png' />
+                            <p className='m-2 mt-4 text-sm cursor-pointer hover:underline'>Administrar Perfiles</p>
+                            <hr />
+                            <Users_Options option={'Cuenta'} />
+                            <Users_Options option={'Centro de ayuda'} />
+                            <Users_Options option={'Cerrar sesión en Jaraxa'} />
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
