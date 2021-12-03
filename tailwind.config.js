@@ -7,7 +7,7 @@ module.exports = {
     backgroundColor: theme => ({
       ...theme('colors'),
       'bg': '#141414',
-      'bg-transparent': 'rgba(0,0,0,.5)',
+      'bg-transparent': 'rgba(0,0,0,.9)',
       'logo': '#DC1B27'
     })
   },
