@@ -11,7 +11,7 @@ export default function Home() {
       </Head>
       <Header />
       <main className="flex flex-col items-center justify-center w-full flex-1 text-center">
-        <Banner /><Banner /><Banner /><Banner /><Banner /><Banner />
+        <Banner />
       </main>
 
       {/* <footer className="flex items-center justify-center w-full h-24 border-t">
