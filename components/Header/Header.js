@@ -11,8 +11,20 @@ const Header = (props) => {
             <div className='flex'>
                 <img src='/logo.png' alt='logo' className='w-14 cursor-pointer' />
                 <div className='ml-4 flex cursor-pointer'>
-                    <p className='text-white text-xs mt-1'>Menú</p>
-                    <FontAwesomeIcon className='text-white ml-2 mt-1' icon={faCaretDown} />
+                    <div className='group flex'>
+                        <p className='text-white text-xs mt-1'>Menú</p>
+                        <FontAwesomeIcon className='text-white ml-2 mt-1' icon={faCaretDown} />
+                        <div className='invisible absolute left-0 top-10 group-hover:visible'>
+                            <FontAwesomeIcon className='text-gray-400 text-lg absolute left-32' icon={faCaretUp} />
+                            <div className='bg-bg-transparent text-white w-64 mt-4 p-1 text-center'>
+                                <hr />
+                                <p className='p-2 pt-3 hover:bg-logo'>Inicio</p>
+                                <p className='p-2 pt-3 hover:bg-logo'>Series TV</p>
+                                <p className='p-2 pt-3 hover:bg-logo'>Películas</p>
+                                <p className='p-2 pt-3 pb-3 hover:bg-logo'>Novedades más vistas</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div className='flex'>
