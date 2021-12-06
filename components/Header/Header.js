@@ -7,7 +7,7 @@ import Users_Options from '../Users_Options/Users_Options'
 
 const Header = (props) => {
     return (
-        <div className='p-3 pb-4 -mt-2 flex justify-between fixed bg-bg-transparent w-full'>
+        <div className='p-3 pb-4 -mt-2 flex justify-between fixed bg-bg-transparent w-full z-50'>
             <div className='flex'>
                 <img src='/logo/logo.png' alt='logo' className='w-14 cursor-pointer' />
                 <div className='ml-4 flex cursor-pointer'>

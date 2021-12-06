@@ -13,7 +13,7 @@ export default function Home({ data_StarWars, data_HarryPotter, data_Avengers })
         <link rel="icon" href="/logo/favicon.ico" />
       </Head>
       <Header />
-      <main className="flex flex-col w-full">
+      <main className="flex flex-col justify-center w-full">
         <Banner />
         <StarWars_Movies data_StarWars={data_StarWars} />
         <HarryPotter data_HarryPotter={data_HarryPotter} />
