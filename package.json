@@ -1,61 +1,25 @@
 {
-  "name": "frontend",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "build-css": "tailwindcss build styles/styles.css -o styles/css/styles.css",
-    "start": "next start",
-    "lint": "eslint . --ext .js",
-    "lint:fix": "eslint . --fix --ext .js",
-    "prettier": "prettier -w .",
-    "pretty-quick": "pretty-quick --staged",
-    "test": "jest --watch"
+    "start": "next start"
   },
-  "pre-commit": [
-    "pretty-quick",
-    "lint"
-  ],
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
-    "i": "^0.3.7",
-    "next": "11.1.2",
-    "next-seo": "^4.28.1",
-    "next-translate": "^1.2.0",
-    "react": "17.0.2",
-    "react-dom": "17.0.2"
-  },
-  "babel": {
-    "presets": [
-      "next/babel",
-      "@babel/preset-react"
-    ]
+    "@fortawesome/fontawesome": "^1.1.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.13",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.16",
+    "next": "latest",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.16.0",
-    "@babel/eslint-parser": "^7.16.3",
-    "@babel/preset-react": "^7.16.0",
-    "@testing-library/jest-dom": "^5.15.0",
-    "@testing-library/react": "^12.1.2",
-    "autoprefixer": "^10.3.7",
-    "babel-jest": "^27.3.1",
-    "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-config-with-prettier": "^6.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "^7.27.0",
-    "identity-obj-proxy": "^3.0.0",
-    "jest": "^27.3.1",
-    "postcss": "^8.3.11",
-    "pre-commit": "^1.2.2",
-    "prettier": "^2.4.1",
-    "pretty-quick": "^3.1.1",
-    "react-test-renderer": "^17.0.2",
-    "tailwindcss": "^2.2.17"
+    "autoprefixer": "^10.2.6",
+    "postcss": "^8.3.5",
+    "tailwindcss": "^2.2.4"
   }
 }
