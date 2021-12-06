@@ -13,11 +13,11 @@ module.exports = {
       width: {
         '2/7': '30%',
       },
-      screens:{
-        'xs': '400px' ,
+      screens: {
+        'xs': '400px',
         'sm': '640px',
         'md': '768px',
-        'lg':'1024px',
+        'lg': '1024px',
         'xl': '1280px',
         '2xl': '1536px'
       }
@@ -27,6 +27,10 @@ module.exports = {
       'bg': '#141414',
       'bg-transparent': 'rgba(0,0,0,.9)',
       'logo': '#DC1B27'
+    }),
+    textColor: theme => ({
+      ...theme('colors'),
+      'primary': '#DC1B27'
     }),
     fontFamily: {
       section: ["Roboto"]
