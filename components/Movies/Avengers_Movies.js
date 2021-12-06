@@ -2,8 +2,8 @@
 export default function Avengers({ data_Avengers }) {
     return (
         <>
-            <h2 className='text-white'>Los Vengadores</h2>
-            <div className='text-white flex flex-wrap justify-between border-2 border-green-500 w-full'>
+            <h2 className='text-white mt-4 left-0 ml-4'>Las Películas de <i>Los Vengadores</i></h2>
+            <div className='text-white flex flex-wrap justify-between w-full'>
                 {
                     data_Avengers.Search.map(
                         movie =>

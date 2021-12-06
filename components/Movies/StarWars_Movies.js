@@ -2,8 +2,8 @@
 export default function StarWars({ data_StarWars }) {
     return (
         <>
-            <h2 className='text-white'>Star Wars</h2>
-            <div className='text-white flex flex-wrap justify-between border-2 border-green-500 w-full'>
+            <h2 className='text-white mt-4 left-0 ml-4'>Las Películas de <i>Star Wars</i></h2>
+            <div className='text-white flex flex-wrap justify-between w-full'>
                 {
                     data_StarWars.Search.map(
                         movie =>

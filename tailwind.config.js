@@ -19,7 +19,10 @@ module.exports = {
       'bg': '#141414',
       'bg-transparent': 'rgba(0,0,0,.9)',
       'logo': '#DC1B27'
-    })
+    }),
+    fontFamily: {
+      section: ["Roboto"]
+    }
   },
   variants: {
     extend: {},
