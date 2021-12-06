@@ -9,8 +9,8 @@ const Header = (props) => {
     return (
         <div className='p-3 pb-4 -mt-2 flex justify-between fixed bg-bg-transparent w-full z-50'>
             <div className='flex'>
-                <img src='/logo/logo.png' alt='logo' className='w-14 cursor-pointer' />
-                <div className='ml-4 flex cursor-pointer'>
+                <img src='/logo/logo.png' alt='logo' className='w-14 cursor-pointer md:w-24 mt-2' />
+                <div className='ml-4 mt-2 flex cursor-pointer md:hidden'>
                     <div className='group flex'>
                         <p className='text-white text-xs mt-1'>Menú</p>
                         <FontAwesomeIcon className='text-white ml-2 mt-1' icon={faCaretDown} />
@@ -25,12 +25,17 @@ const Header = (props) => {
                         </div>
                     </div>
                 </div>
+                <div className='ml-8 text-white mt-3 hidden md:flex'>
+                    <p className='mr-3 cursor-pointer hover:text-primary'>Inicio</p>
+                    <p className='mr-3 cursor-pointer hover:text-primary'>Películas</p>
+                    <p className='mr-3 cursor-pointer hover:text-primary'>Novedades más vistas</p>
+                </div>
             </div>
             <div className='flex'>
-                <FontAwesomeIcon className='text-white ml-2 text-xs mt-2 mr-6 cursor-pointer' icon={faSearch} />
-                <FontAwesomeIcon className='text-white ml-2 text-xs mt-2 mr-16 cursor-pointer' icon={faBell} />
+                <FontAwesomeIcon className='text-white ml-2 text-xs mt-3 mr-6 cursor-pointer hover:text-primary md:text-lg' icon={faSearch} />
+                <FontAwesomeIcon className='text-white ml-2 text-xs mt-3 mr-16 cursor-pointer hover:text-primary md:text-lg' icon={faBell} />
                 <div className='group'>
-                    <img src='/image_user/image-user.png' alt='image user' className='absolute cursor-pointer w-9 right-4 top-2 rounded-md' />
+                    <img src='/image_user/image-user.png' alt='image user' className='absolute cursor-pointer w-9 right-4 top-3 rounded-md md:top-4' />
                     <div className='invisible absolute right-0 top-8 group-hover:visible'>
                         {/* <FontAwesomeIcon className='text-gray-400 text-lg absolute right-0' icon={faCaretUp} /> */}
                         <div className='bg-bg-transparent text-white w-52 mt-4 p-1'>
