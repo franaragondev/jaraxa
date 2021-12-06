@@ -28,8 +28,8 @@ export default function Home({ data_StarWars, data_HarryPotter }) {
 //Consume API para obtener películas
 export async function getStaticProps() {
   try {
-    const res_StarWars = await fetch(`http://www.omdbapi.com/?s=wars&apikey=86843cb5`)
-    const res_HarryPotter = await fetch(`http://www.omdbapi.com/?s=harry potter&apikey=86843cb5`)
+    const res_StarWars = await fetch(`http://www.omdbapi.com/?s=wars&&type=movie&apikey=86843cb5`)
+    const res_HarryPotter = await fetch(`http://www.omdbapi.com/?s=harry potter&type=movie&apikey=86843cb5`)
     const data_StarWars = await res_StarWars.json()
     const data_HarryPotter = await res_HarryPotter.json()
     return {

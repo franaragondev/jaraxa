@@ -7,14 +7,9 @@ export default function HarryPotter({ data_HarryPotter }) {
                 {
                     data_HarryPotter.Search.map(
                         movie =>
-                            // Condición para sólo mostrar películas
-                            movie.Type == 'movie'
-                                ?
-                                <div className='border-2 border-red-700 w-2/7 h-60 m-2 bg-cover'>
-                                    <img className='object-cover' src={movie.Poster} />
-                                </div>
-                                :
-                                <span></span>
+                            <div className='border-2 border-red-700 w-2/7 h-60 m-2'>
+                                <img className='object-cover h-full w-full' src={movie.Poster} />
+                            </div>
                     )
                 }
             </div>
