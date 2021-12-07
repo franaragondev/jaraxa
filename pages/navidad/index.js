@@ -3,6 +3,15 @@ import Head from 'next/head'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Christmas from '../../components/Movies/Christmas/AllChristmas_Movies'
+import Swal from 'sweetalert2';
+
+function message() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: '¡Funcionalidad No Disponible!'
+    })
+}
 
 export default function Home({ data_Christmas, data_Christmas2, data_Christmas3 }) {
   return (
@@ -11,11 +20,11 @@ export default function Home({ data_Christmas, data_Christmas2, data_Christmas3 
         <title>Página de inicio - Jaraxa</title>
         <link rel="icon" href="/logo/favicon.ico" />
       </Head>
-      <Header />
+      <Header message={message}/>
       <main className="flex flex-col justify-center w-full">
         <Christmas data_Christmas={data_Christmas} data_Christmas2={data_Christmas2} data_Christmas3={data_Christmas3} />
       </main>
-      <Footer />
+      <Footer message={message}/>
     </div>
   )
 }
