@@ -15,7 +15,6 @@ const Header = (props) => {
                         <p className='text-white text-xs mt-1'>Menú</p>
                         <FontAwesomeIcon className='text-white ml-2 mt-1' icon={faCaretDown} />
                         <div className='invisible absolute left-0 top-8 group-hover:visible'>
-                            {/* <FontAwesomeIcon className='text-gray-400 text-lg absolute left-32' icon={faCaretUp} /> */}
                             <div className='bg-bg-transparent text-white w-64 mt-4 p-1 text-center'>
                                 <hr />
                                 <p className='p-2 pt-3 hover:bg-logo'>Inicio</p>
@@ -37,7 +36,6 @@ const Header = (props) => {
                 <div className='group'>
                     <img src='/image_user/image-user.png' alt='image user' className='absolute cursor-pointer w-9 right-4 top-3 rounded-md md:top-4' />
                     <div className='invisible absolute right-0 top-8 group-hover:visible'>
-                        {/* <FontAwesomeIcon className='text-gray-400 text-lg absolute right-0' icon={faCaretUp} /> */}
                         <div className='bg-bg-transparent text-white w-52 mt-4 p-1'>
                             <hr />
                             <Profiles name='Fran Aragón' image='/image-user-1.png' />

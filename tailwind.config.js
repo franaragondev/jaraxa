@@ -30,7 +30,8 @@ module.exports = {
     }),
     textColor: theme => ({
       ...theme('colors'),
-      'primary': '#DC1B27'
+      'primary': '#DC1B27',
+      'footer': '#808080'
     }),
     fontFamily: {
       section: ["Roboto"]
