@@ -20,7 +20,7 @@ const Header = (props) => {
                                 <hr />
                                 <Link href='/'><p className='p-2 pt-3 hover:bg-logo'>Inicio</p></Link>
                                 <Link href='/navidad'><p className='p-2 pt-3 hover:bg-logo'>Películas de Navidad</p></Link>
-                                <p className='p-2 pt-3 pb-3 hover:bg-logo'>Novedades más vistas</p>
+                                <p onClick={props.message} className='p-2 pt-3 pb-3 hover:bg-logo'>Novedades más vistas</p>
                             </div>
                         </div>
                     </div>
@@ -28,26 +28,26 @@ const Header = (props) => {
                 <div className='ml-8 text-white mt-3 hidden md:flex'>
                     <Link href='/'><p className='mr-3 cursor-pointer hover:text-primary'>Inicio</p></Link>
                     <Link href='/navidad'><p className='mr-3 cursor-pointer hover:text-primary'>Películas de Navidad</p></Link>
-                    <p className='mr-3 cursor-pointer hover:text-primary'>Novedades más vistas</p>
+                    <p onClick={props.message} className='mr-3 cursor-pointer hover:text-primary'>Novedades más vistas</p>
                 </div>
             </div>
             <div className='flex'>
-                <FontAwesomeIcon className='text-white ml-2 text-xs mt-3 mr-6 cursor-pointer hover:text-primary md:text-lg' icon={faSearch} />
-                <FontAwesomeIcon className='text-white ml-2 text-xs mt-3 mr-16 cursor-pointer hover:text-primary md:text-lg' icon={faBell} />
+                <FontAwesomeIcon onClick={props.message} className='text-white ml-2 text-xs mt-3 mr-6 cursor-pointer hover:text-primary md:text-lg' icon={faSearch} />
+                <FontAwesomeIcon onClick={props.message} className='text-white ml-2 text-xs mt-3 mr-16 cursor-pointer hover:text-primary md:text-lg' icon={faBell} />
                 <div className='group'>
                     <img src='/image_user/image-user.png' alt='image user' className='absolute cursor-pointer w-9 right-4 top-3 rounded-md md:top-4' />
                     <div className='invisible absolute right-0 top-8 group-hover:visible'>
                         <div className='bg-bg-transparent text-white w-52 mt-4 p-1'>
                             <hr />
-                            <Profiles name='Fran Aragón' image='/image-user-1.png' />
-                            <Profiles name='Marina Barriga' image='/image-user-2.png' />
-                            <Profiles name='Alba Barriga' image='/image-user-3.png' />
-                            <Profiles name='Antonio Garrido' image='/image-user-4.png' />
-                            <p className='m-2 mt-4 text-sm cursor-pointer hover:underline'>Administrar Perfiles</p>
+                            <Profiles message={props.message} name='Fran Aragón' image='/image-user-1.png' />
+                            <Profiles message={props.message} name='Marina Barriga' image='/image-user-2.png' />
+                            <Profiles message={props.message} name='Alba Barriga' image='/image-user-3.png' />
+                            <Profiles message={props.message} name='Antonio Garrido' image='/image-user-4.png' />
+                            <p onClick={props.message} className='m-2 mt-4 text-sm cursor-pointer hover:underline'>Administrar Perfiles</p>
                             <hr />
-                            <Users_Options option={'Cuenta'} />
-                            <Users_Options option={'Centro de ayuda'} />
-                            <Users_Options option={'Cerrar sesión en Jaraxa'} />
+                            <Users_Options message={props.message} option={'Cuenta'} />
+                            <Users_Options message={props.message} option={'Centro de ayuda'} />
+                            <Users_Options message={props.message} option={'Cerrar sesión en Jaraxa'} />
                         </div>
                     </div>
                 </div>

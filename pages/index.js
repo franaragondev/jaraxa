@@ -6,6 +6,15 @@ import StarWars_Movies from '../components/Movies/StarWars/StarWars_Movies'
 import HarryPotter from '../components/Movies/HarryPotter/HarryPotter_Movies'
 import Avengers from '../components/Movies/Avengers/Avengers_Movies'
 import Christmas from '../components/Movies/Christmas/Christmas_Movies'
+import Swal from 'sweetalert2';
+
+function message() {
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: '¡Funcionalidad No Disponible!'
+    })
+}
 
 export default function Home({ data_StarWars, data_HarryPotter, data_Avengers, data_Christmas }) {
   return (
@@ -14,7 +23,7 @@ export default function Home({ data_StarWars, data_HarryPotter, data_Avengers, d
         <title>Página de inicio - Jaraxa</title>
         <link rel="icon" href="/logo/favicon.ico" />
       </Head>
-      <Header />
+      <Header message={message} />
       <main className="flex flex-col justify-center w-full">
         <Banner />
         <Christmas data_Christmas={data_Christmas} />
@@ -22,7 +31,7 @@ export default function Home({ data_StarWars, data_HarryPotter, data_Avengers, d
         <HarryPotter data_HarryPotter={data_HarryPotter} />
         <Avengers data_Avengers={data_Avengers} />
       </main>
-      <Footer />
+      <Footer message={message} />
     </div>
   )
 }
