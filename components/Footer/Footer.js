@@ -7,12 +7,14 @@ const Footer = (props) => {
     return (
         <div className='flex justify-center flex-col mt-10'>
             <img alt='logo' src='/logo/logo.png' className='w-40 block m-auto' />
+            {/* Iconos redes sociales */}
             <div className='m-auto w-40 flex justify-between text-2xl text-white mt-4'>
                 <FontAwesomeIcon onClick={props.message} className='cursor-pointer hover:text-primary' icon={faFacebook} />
                 <FontAwesomeIcon onClick={props.message} className='cursor-pointer hover:text-primary' icon={faInstagram} />
                 <FontAwesomeIcon onClick={props.message} className='cursor-pointer hover:text-primary' icon={faTwitter} />
                 <FontAwesomeIcon onClick={props.message} className='cursor-pointer hover:text-primary' icon={faTwitch} />
             </div>
+            {/* Opciones footer */}
             <div className='text-footer flex flex-wrap justify-around text-xs mt-8 mb-8'>
                 <p onClick={props.message} className='cursor-pointer hover:underline w-2/5 md:w-2/7 text-center mb-2'>Audio y subtítulos</p>
                 <p onClick={props.message} className='cursor-pointer hover:underline w-2/5 md:w-2/7 text-center mb-2'>Películas y países</p>

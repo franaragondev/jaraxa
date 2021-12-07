@@ -5,6 +5,7 @@ import Footer from '../../components/Footer/Footer'
 import Christmas from '../../components/Movies/Christmas/AllChristmas_Movies'
 import Swal from 'sweetalert2';
 
+//Popup que avisa al usuario que la funcionalidad no está disponible
 function message() {
     Swal.fire({
         icon: 'error',

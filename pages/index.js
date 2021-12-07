@@ -8,6 +8,7 @@ import Avengers from '../components/Movies/Avengers/Avengers_Movies'
 import Christmas from '../components/Movies/Christmas/Christmas_Movies'
 import Swal from 'sweetalert2';
 
+//Popup que avisa al usuario que la funcionalidad no está disponible
 function message() {
     Swal.fire({
         icon: 'error',
