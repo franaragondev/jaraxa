@@ -4,12 +4,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp, faSearch, faBell } from '@fortawesome/fontawesome-free-solid';
 import Profiles from '../Profiles/Profiles';
 import Users_Options from '../Users_Options/Users_Options'
+import Link from 'next/Link'
 
 const Header = (props) => {
     return (
         <div className='p-3 pb-4 -mt-2 flex justify-between fixed bg-bg-transparent w-full z-50'>
             <div className='flex'>
-                <img src='/logo/logo.png' alt='logo' className='w-14 cursor-pointer md:w-24 mt-2' />
+                <Link href='/'><img src='/logo/logo.png' alt='logo' className='w-14 cursor-pointer md:w-24 mt-2' /></Link>
                 <div className='ml-4 mt-2 flex cursor-pointer md:hidden'>
                     <div className='group flex'>
                         <p className='text-white text-xs mt-1'>Menú</p>
@@ -17,16 +18,16 @@ const Header = (props) => {
                         <div className='invisible absolute left-0 top-8 group-hover:visible'>
                             <div className='bg-bg-transparent text-white w-64 mt-4 p-1 text-center'>
                                 <hr />
-                                <p className='p-2 pt-3 hover:bg-logo'>Inicio</p>
-                                <p className='p-2 pt-3 hover:bg-logo'>Películas</p>
+                                <Link href='/'><p className='p-2 pt-3 hover:bg-logo'>Inicio</p></Link>
+                                <Link href='/navidad'><p className='p-2 pt-3 hover:bg-logo'>Películas de Navidad</p></Link>
                                 <p className='p-2 pt-3 pb-3 hover:bg-logo'>Novedades más vistas</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className='ml-8 text-white mt-3 hidden md:flex'>
-                    <p className='mr-3 cursor-pointer hover:text-primary'>Inicio</p>
-                    <p className='mr-3 cursor-pointer hover:text-primary'>Películas</p>
+                    <Link href='/'><p className='mr-3 cursor-pointer hover:text-primary'>Inicio</p></Link>
+                    <Link href='/navidad'><p className='mr-3 cursor-pointer hover:text-primary'>Películas de Navidad</p></Link>
                     <p className='mr-3 cursor-pointer hover:text-primary'>Novedades más vistas</p>
                 </div>
             </div>
