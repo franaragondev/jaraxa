@@ -1,9 +1,9 @@
 module.exports = {
   mode: 'jit',
-  purge: {
-    content: ["./src/pages/**/*.{js,jsx,ts,tsx}", "./src/components/**/*.{js,jsx,ts,tsx}"]
-    // These options are passed through directly to PurgeCSS
-  },
+  purge: [
+    './components/**/*.{js,ts,jsx,tsx}',
+    './pages/**/*.{js,ts,jsx,tsx}'
+  ],
   darkMode: false, // or 'media' or 'class'
   theme: {
     backgroundSize: {
