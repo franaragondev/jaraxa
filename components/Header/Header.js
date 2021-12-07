@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown, faCaretUp, faSearch, faBell } from '@fortawesome/fontawesome-free-solid';
 import Profiles from '../Profiles/Profiles';
 import Users_Options from '../Users_Options/Users_Options'
-import Link from 'next/Link'
+import Link from 'next/link'
 
 const Header = (props) => {
     return (

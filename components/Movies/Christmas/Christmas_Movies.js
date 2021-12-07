@@ -1,5 +1,5 @@
 //Componente que renderizará las películas de Navidad
-import Link from 'next/Link'
+import Link from 'next/link'
 import React, { useState } from 'react'
 import { Modal, Button } from '@material-ui/core'
 import { makeStyles } from '@material-ui/core/styles'
