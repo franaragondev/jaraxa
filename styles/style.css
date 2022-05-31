@@ -15,3 +15,7 @@
 .card-zoom:hover .card-zoom-image {
     @apply scale-125;
 }
+
+.MuiButton-root {
+    min-width: 30px !important;
+}
