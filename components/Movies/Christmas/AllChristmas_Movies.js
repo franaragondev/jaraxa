@@ -43,7 +43,7 @@ export default function AllChristmas({ data_Christmas, data_Christmas2, data_Chr
     const body = () => (
         <div className={styles.modal}>
             <div align='center'>
-                <Button className='left-44' onClick={() => abrirCerrarModal()}><FontAwesomeIcon icon={faTimes}></FontAwesomeIcon></Button>
+                <Button className='left-44 w-12' onClick={() => abrirCerrarModal()}><FontAwesomeIcon icon={faTimes}></FontAwesomeIcon></Button>
                 <img src={poster} />
                 <h2 className='mt-2'><strong><i>{title}</i></strong></h2>
                 <h2>{year}</h2>
